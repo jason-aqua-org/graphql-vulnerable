@@ -32,7 +32,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          GITHUB_TOKEN: ${{ github.token }}
+          #GITHUB_TOKEN: ${{ github.token }}
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
